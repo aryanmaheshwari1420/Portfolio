@@ -10,3 +10,76 @@ body{
     /* background color */
     background-color: #080808;
 }
+#header{
+    width: 100%;
+    height: 115vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    /* for image and link will be side by side */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    /* for horizontally aline */
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: larger;
+
+}
+
+nav ul li a{
+    color: white;
+    /* for removing underline */
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    /* when we take cursor over there we want to hide that line that's why we do this width = 0 */
+    /* width: 100%; */
+    width: 0;  
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    /* we  hover on the button it will be shown the red initailly it is zero*/
+        width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+    
+}
