@@ -147,3 +147,23 @@ nav ul li a:hover::after{
 .tab-links.active-links::after{
     width: 50%;
 }
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #fff;
+    font-size: 14px;
+}
+
+.tab-contents{
+    /* it will hide the all contents */
+    display: none;
+}
+
+.tab-contents.active-tab{
+    /* so it can be visible */
+    display: block;
+}

@@ -31,23 +31,85 @@
     </div>
     <!-- -------------------------------------about section --------------------------------->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae non, voluptas in animi vero sint similique laudantium exercitationem nisi soluta? Sequi omnis cumque quia rem accusamus vero repellendus doloremque totam ipsam itaque? Maxime, provident, veritatis magni delectus beatae maiores est voluptate dolorum ut sapiente corporis nesciunt rerum nihil commodi iste quo aspernatur! Deleniti cum architecto dignissimos quasi, labore fugiat aut rem non atque quaerat iusto, ut, debitis suscipit! Eius error doloribus, sit beatae non quia earum, enim iste corporis quisquam ab necessitatibus sunt asperiores laudantium omnis dicta voluptas nostrum, aliquam perferendis dolore consectetur! Dignissimos similique id quae, sint dolore fugit!</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              non, voluptas in animi vero sint similique laudantium
+              exercitationem nisi soluta? Sequi omnis cumque quia rem accusamus
+              vero repellendus doloremque totam ipsam itaque? Maxime, provident,
+              veritatis magni delectus beatae maiores est voluptate dolorum ut
+              sapiente corporis nesciunt rerum nihil commodi iste quo
+              aspernatur! Deleniti cum architecto dignissimos quasi, labore
+              fugiat aut rem non atque quaerat iusto, ut, debitis suscipit! Eius
+              error doloribus, sit beatae non quia earum, enim iste corporis
+              quisquam ab necessitatibus sunt asperiores laudantium omnis dicta
+              voluptas nostrum, aliquam perferendis dolore consectetur!
+              Dignissimos similique id quae, sint dolore fugit!
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Flutter developer</li>
+                <li><span>Machine learning</span><br />Flutter developer</li>
+                <li>
+                  <span>App developement</span><br />Building Android/IOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />Working as flutter developer in
+                  bright infonet
+                </li>
+                <li><span>2022-20022</span><br />team leader at a Ieee</li>
+                <li><span>Internishop</span><br />At bright infonet</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UI/UX</span><br />Flutter developer</li>
+                <li><span>Machine learning</span><br />Flutter developer</li>
+                <li>
+                  <span>App developement</span><br />Building Android/IOS apps
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        // to show the other contents on onclick event on experience and education
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
