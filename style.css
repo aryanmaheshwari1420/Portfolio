@@ -379,3 +379,57 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+
+/* ------------------------------------------------------------------css for small screen---------------------------------------------------- */
+
+/* ------thing which i don't want to see on laptop page but want on mobile */
+nav .fas{
+    display: none;
+}
+/* ---------this is all about media query to show on the mobile screen with proper image and format */
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+nav .fas{
+    display: block;
+    font-size: 25px;
+
+}
+
+nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    /* to hide when we clicked on button */
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+}
+
+nav ul li{
+    display: block;
+    margin: 25px;
+
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+}
