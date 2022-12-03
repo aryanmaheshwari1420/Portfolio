@@ -237,6 +237,7 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: 0.5s;
 
 }
 .layer{
@@ -256,6 +257,7 @@ nav ul li a:hover::after{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    transition: height 0.5s;
 }
 .layer h3{
     font-weight: 500;
@@ -273,4 +275,28 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s; 
+}
+
+.btn:hover{
+    background:#ff004f;
 }
