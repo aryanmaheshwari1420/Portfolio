@@ -45,36 +45,29 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-              non, voluptas in animi vero sint similique laudantium
-              exercitationem nisi soluta? Sequi omnis cumque quia rem accusamus
-              vero repellendus doloremque totam ipsam itaque? Maxime, provident,
-              veritatis magni delectus beatae maiores est voluptate dolorum ut
-              sapiente corporis nesciunt rerum nihil commodi iste quo
-              aspernatur! Deleniti cum architecto dignissimos quasi, labore
-              fugiat aut rem non atque quaerat iusto, ut, debitis suscipit! Eius
-              error doloribus, sit beatae non quia earum, enim iste corporis
-              quisquam ab necessitatibus sunt asperiores laudantium omnis dicta
-              voluptas nostrum, aliquam perferendis dolore consectetur!
-              Dignissimos similique id quae, sint dolore fugit!
+              I'm a CS Student currently in Gla University, I'm a machine
+              learning enthusiast and a intermediate Android developer(Flutter)
+              , developed many real life mobile applications such as ChatApp,
+              Movie Recommendation App etc. and also working as a flutter
+              Developer in Bright Infonet company and I'm also a learning
+              enthusiast in tech fields currently working with database
+              projects.
             </p>
-
             <div class="tab-titles">
-              <p class="tab-links active-links" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br />Flutter developer</li>
-                <li><span>Machine learning</span><br />Flutter developer</li>
-                <li>
-                  <span>App developement</span><br />Building Android/IOS apps
+                <li><span>Android Developer</span><br />Flutter developer(Android/IOS apps)</li>
+                <li><span>Web Developer</span><br />HTML <BR>CSS <BR>javaScript <br></li>
+                <li><span>Machine learning</span><br />Worked on more than 20 datasets for predictions</li>
+                <li><span>programming Languages</span><br />intermediate java developer <br>
+                  Python , Dart<br> C programming language.
                 </li>
+                <li><span>Version Control System</span><br />Beginner</li>
+                
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -191,7 +184,7 @@
     </div>
     <!-- -------------------------------contact form -->
     <div id="contact">
-       <div class="container">
+      <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact me</h1>
@@ -200,25 +193,43 @@
             <div class="social-icons">
               <a href=""><i class="fa-brands fa-facebook"></i></a>
               <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-              <a href="https://github.com/aryanmaheshwari1420"><i class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/aryanmaheshwari1420"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-            <a href="images/my-resume.pdf" download class="btn btn2">Download CV</a>
+            <a href="images/my-resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
             <span id="msg"></span>
           </div>
         </div>
-       </div>
-       <div class="copyright">
-        <p>Copyright @ kevin. Made with <i class="fas fa-heart"></i> by aryanmaheshwari1420</p>
-       </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ kevin. Made with <i class="fas fa-heart"></i> by
+          aryanmaheshwari1420
+        </p>
+      </div>
     </div>
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
@@ -237,32 +248,33 @@
       }
     </script>
     <script>
-            var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-            function openmenu(){
-              sidemenu.style.right = "0";
-            }
-            function closemenu(){
-              sidemenu.style.right = "-200px";
-            }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwIixHMHl2WsS4_c4ExAn4FiSDFxxo_Nby4hrWuzvg8Ty3HSF2hvVFNraY7k434wJuIdw/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message Sent Succesfully"
-            setTimeout(function(){
-              msg.innerHTML = ""
-            },5000)
-            form.reset()
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwIixHMHl2WsS4_c4ExAn4FiSDFxxo_Nby4hrWuzvg8Ty3HSF2hvVFNraY7k434wJuIdw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Succesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
