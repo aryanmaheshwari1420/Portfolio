@@ -1,276 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>personal Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/b32d403477.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/IMG_0699.PNG" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>Android(Flutter) and Web developer</p>
-          <h1>
-            Hi , I am <span>Aryan Maheshwari</span> <br />
-            from India
-          </h1>
-        </div>
-      </div>
-    </div>
-    <!-- -------------------------------------about section --------------------------------->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/short.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              I'm a CS Student currently in Gla University, I'm a machine
-              learning enthusiast and a intermediate Android developer(Flutter)
-              , developed many real life mobile applications such as ChatApp,
-              Movie Recommendation App etc. and also working as a flutter
-              Developer in Bright Infonet company and I'm also a learning
-              enthusiast in tech fields currently working with database
-              projects.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Android Developer</span><br />Flutter developer(Android/IOS apps)</li>
-                <li><span>Web Developer</span><br />HTML <BR>CSS <BR>javaScript <br></li>
-                <li><span>Machine learning</span><br />Worked on more than 20 datasets for predictions</li>
-                <li><span>programming Languages</span><br />intermediate java developer <br>
-                  Python , Dart<br> C programming language.
-                </li>
-                <li><span>Version Control System</span><br />Beginner</li>
-                
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>Aug 2022 - Sep 2022</span><br />Working as flutter developer in
-                  bright infonet
-                </li>
-                <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>High School</span><br />JP Public Academy <br>80.3%</li>
-                <li><span>Intermediate</span><br />JP Public Academy <br>75 %</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ------------------------------------------------------services--------------------------------- -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web design</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
-              nihil recusandae reprehenderit architecto maiores voluptate
-              eligendi voluptates dolore explicabo pariatur doloremque! Autem
-              commodi pariatur a.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI/UX design</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
-              nihil recusandae reprehenderit architecto maiores voluptate
-              eligendi voluptates dolore explicabo pariatur doloremque! Autem
-              commodi pariatur a.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>App design</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
-              nihil recusandae reprehenderit architecto maiores voluptate
-              eligendi voluptates dolore explicabo pariatur doloremque! Autem
-              commodi pariatur a.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -----------------------------portfilio------------------- -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                This app made by me here you can chat with one to one with
-                online and offline status
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-2.png" />
-            <div class="layer">
-              <h3>Movie Recommendation App</h3>
-              <p>
-                This app made by me here you can seach for any movies
-                description with rating on tmdb platform.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-3.png" />
-            <div class="layer">
-              <h3>video downloader app</h3>
-              <p>
-                This app made by me here you can download on click event to open
-                and download at the same time what content it has on the phone.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-      </div>
-    </div>
-    <!-- -------------------------------contact form -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact me</h1>
-            <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>1652521365</p>
-            <div class="social-icons">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-              <a href="https://github.com/aryanmaheshwari1420"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </div>
-            <a href="images/AryanMaheshwari_21dec.pdf" download class="btn btn2"
-              >Download CV</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          Copyright @ kevin. Made with <i class="fas fa-heart"></i> by
-          aryanmaheshwari1420
-        </p>
-      </div>
-    </div>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-links");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        // to show the other contents on onclick event on experience and education
-        event.currentTarget.classList.add("active-links");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/b32d403477.js" crossorigin="anonymous"></script>
+</head>
 
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwIixHMHl2WsS4_c4ExAn4FiSDFxxo_Nby4hrWuzvg8Ty3HSF2hvVFNraY7k434wJuIdw/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/IMG_0699.PNG" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Android(Flutter) and Web developer</p>
+        <h1>
+          Hi , I am <span>Aryan Maheshwari</span> <br />
+          from India
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------------about section --------------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/short.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            As a Computer Science student at GLA University, I am passionate about machine learning and have achieved
+            proficiency as an intermediate Android developer using Flutter.Over time, I have successfully created
+            several real-life mobile applications, including Movie Recommendation App .The combination of academic
+            pursuits, hands-on development experience, and professional work has equipped me with a comprehensive skill
+            set, positioning me for continued growth and success in the dynamic field of technology.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Android Developer</span><br />Flutter <br>Dart <br>State management</li>
+              <li><span>Web Developer</span><br />Html <BR>CSS <BR>Java Script <br> Reactjs</li>
+              <li><span>Machine learning</span><br />Worked on more than 20 datasets for predictions</li>
+              <li><span>Programming Languages</span><br /> Java , Python,
+                Dart, JavaScript.<br>
+              </li>
+              <li><span>Git & Github</span><br /></li>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message Sent Succesfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-  </body>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Bright Infonet, Flutter, Haryana, India , Aug 2022 - Sep 2022</span><br />
+              <li>Collaborated on “The School Diary” mobile app, enhancing the
+                user experience with Flutter.</li>
+              <li>Developed and deployed an innovative Image to PDF Generator.</li>
+              <li>Implemented robust functionality for downloading diverse file formats.</li>
+              </li>
+              <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
+            </ul>
+            <br>
+            <ul>
+              <li>
+                <span>Bharat Intern, Machine Learning, India (Project based Internship), July 2023 - Aug
+                  2023</span><br />
+              <li>Designed and fine-tuned machine learning models: Achieved
+                87% accuracy with Linear Regression on Iris dataset, and 85%
+                accuracy with Random Forest Classifier on Wine Quality
+                dataset.</li>
+              <li>Engineered live websites for both projects, allowing real-time testing
+                and predictive analysis</li>
+              </li>
+              <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
+            </ul>
+            <ul>
+              <li>
+                <span>GLA University, Mathura, India May 2022 - June 2022</span><br />
+              <li>Completed Job Oriented Value-Added Course training on
+                Mobile Development (Flutter) as a Gold Medalis</li>
+              </li>
+              <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>GLA University, Mathura
+                  2020-2024</span><br />B.Tech. in Computer Science and Engineering
+                (AIML)<br></li>
+              <li><span>Class XII, Central Board of Secondary Education
+                  (CBSE) | May 2020</span><br />JP Public Academy <br>75%</li>
+              <li><span>Class X, Central Board of Secondary Education
+                  (CBSE) | May 2018</span><br />JP Public Academy <br>80.3%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------------------services--------------------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web design</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+            nihil recusandae reprehenderit architecto maiores voluptate
+            eligendi voluptates dolore explicabo pariatur doloremque! Autem
+            commodi pariatur a.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>UI/UX design</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+            nihil recusandae reprehenderit architecto maiores voluptate
+            eligendi voluptates dolore explicabo pariatur doloremque! Autem
+            commodi pariatur a.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>App design</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+            nihil recusandae reprehenderit architecto maiores voluptate
+            eligendi voluptates dolore explicabo pariatur doloremque! Autem
+            commodi pariatur a.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------portfilio------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-2.png" />
+          <div class="layer">
+            <h3>Movie Description App</h3>
+            <p>
+              This app give information about latest tvshows, movies with their
+              descriptions and ratings and etc.
+            </p>
+            <a href="https://github.com/aryanmaheshwari1420/MovieDescription" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/posts/aryan-maheshwari-020bb0206_project-androiddevelopment-android-activity-7017627580908363776-65tm?utm_source=share&utm_medium=member_desktop" target="_blank"><i
+              class="fa-solid fa-external-link-square-alt"></i>Demo</a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-1.png" />
+          <div class="layer">
+            <h3>Notes App</h3>
+            <p>
+              This App give you real time acces of your daily task to saved it .
+            </p>
+            <a href="https://github.com/aryanmaheshwari1420/NotesApp---flutter" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" />
+          <div class="layer">
+            <h3>Text Utils Web application</h3>
+            <p>
+              This web application helps to peform necessary text manipulation functionalities.
+            </p>
+            <a href="https://github.com/aryanmaheshwari1420/React" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://aryanmaheshwari1420.github.io/React/" target="_blank"><i
+                class="fa-solid fa-external-link-square-alt"></i>Live</a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- -------------------------------contact form -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>1652521365</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://github.com/aryanmaheshwari1420"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/AryanMaheshwari_21dec.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright @ kevin. Made with <i class="fas fa-heart"></i> by
+        aryanmaheshwari1420
+      </p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-links");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      // to show the other contents on onclick event on experience and education
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwIixHMHl2WsS4_c4ExAn4FiSDFxxo_Nby4hrWuzvg8Ty3HSF2hvVFNraY7k434wJuIdw/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message Sent Succesfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+
 </html>
