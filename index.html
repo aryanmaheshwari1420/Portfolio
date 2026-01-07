@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>personal Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b32d403477.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,12 +22,10 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
-        <p>Android(Flutter) and Web developer</p>
+        <p>Android Developer and AIML Enthusiast</p>
         <h1>
           Hi , I am <span>Aryan Maheshwari</span> <br />
           from India
@@ -44,77 +43,69 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>
-            As a Computer Science student at GLA University, I am passionate about machine learning and have achieved
-            proficiency as an intermediate Android developer using Flutter.Over time, I have successfully created
-            several real-life mobile applications, including Movie Recommendation App .The combination of academic
-            pursuits, hands-on development experience, and professional work has equipped me with a comprehensive skill
-            set, positioning me for continued growth and success in the dynamic field of technology.
+            I am an <strong>Associate Software Developer</strong> at Antino Labs with a strong foundation in Android
+            (Jetpack Compose, Flutter) and Machine Learning. With over 1 Lakh+ installs on production-level apps like
+            Competishun, I specialize in building scalable, high-performance features. From architecting educational
+            platforms to integrating NFC-based attendance systems, I am passionate about solving real-world problems
+            through innovative technology.
           </p>
           <div class="tab-titles">
             <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('honors')">Honors</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Android Developer</span><br />Flutter <br>Dart <br>State management</li>
-              <li><span>Web Developer</span><br />Html <BR>CSS <BR>Java Script <br> Reactjs</li>
-              <li><span>Machine learning</span><br />Worked on more than 20 datasets for predictions</li>
-              <li><span>Programming Languages</span><br /> Java , Python,
-                Dart, JavaScript.<br>
-              </li>
-              <li><span>Git & Github</span><br /></li>
-
+              <li><span>Android Development</span><br />Jetpack Compose, MVVM, XML UI, Flutter, Kotlin, Java, Dart,
+                Retrofit, Hilt, RoomDB, Coroutines</li>
+              <li><span>Web Development</span><br />React.js, Flask, HTML5, CSS3, JavaScript (ES6+)</li>
+              <li><span>Machine Learning</span><br />Python, Deep Learning, Data Preprocessing, Model Evaluation
+                (K-Nearest Neighbor, Random Forest)</li>
+              <li><span>Tools & Concepts</span><br />Git, GitHub, Postman, Firebase, Android SDK, REST APIs, GraphQL,
+                Clean Architecture, DSA</li>
             </ul>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
               <li>
-                <span>Bright Infonet, Flutter, Haryana, India , Aug 2022 - Sep 2022</span><br />
-              <li>Collaborated on “The School Diary” mobile app, enhancing the
-                user experience with Flutter.</li>
-              <li>Developed and deployed an innovative Image to PDF Generator.</li>
-              <li>Implemented robust functionality for downloading diverse file formats.</li>
+                <span>Antino Labs | Associate Software Developer</span><br />Feb 2024 - Present<br>
+                - Engineered features for educational app Competishun (17.5K+ installs).<br>
+                - Led module delivery for notifications, payments, and LiveStream.<br>
+                - Integrated NFC for digitized attendance, reducing manual effort by 50%.
               </li>
-              <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
-            </ul>
-            <br>
-            <ul>
               <li>
-                <span>Bharat Intern, Machine Learning, India (Project based Internship), July 2023 - Aug
-                  2023</span><br />
-              <li>Designed and fine-tuned machine learning models: Achieved
-                87% accuracy with Linear Regression on Iris dataset, and 85%
-                accuracy with Random Forest Classifier on Wine Quality
-                dataset.</li>
-              <li>Engineered live websites for both projects, allowing real-time testing
-                and predictive analysis</li>
+                <span>Orbitor | Machine Learning Intern</span><br />July 2023 - Aug 2023<br>
+                - Fine-tuned ML models achieving 87% accuracy on Iris & Wine datasets.<br>
+                - Deployed live Flask-based websites for real-time prediction.
               </li>
-              <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
-            </ul>
-            <ul>
               <li>
-                <span>GLA University, Mathura, India May 2022 - June 2022</span><br />
-              <li>Completed Job Oriented Value-Added Course training on
-                Mobile Development (Flutter) as a Gold Medalis</li>
+                <span>Bright Infonet | Frontend Developer Intern</span><br />Aug 2022 - Sep 2022<br>
+                - Designed responsive UI in Flutter for "The School Diary".<br>
+                - Created Image-to-PDF module and file downloader.
               </li>
-              <li><span>2021-2022</span><br />Team Leader at a IEEE Club in Collage</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>GLA University, Mathura
-                  2020-2024</span><br />B.Tech. in Computer Science and Engineering
-                (AIML)<br></li>
-              <li><span>Class XII, Central Board of Secondary Education
-                  (CBSE) | May 2020</span><br />JP Public Academy <br>75%</li>
-              <li><span>Class X, Central Board of Secondary Education
-                  (CBSE) | May 2018</span><br />JP Public Academy <br>80.3%</li>
+              <li><span>GLA University, Mathura</span><br />B.Tech - Computer Science (AIML) | GPA: 7.83 (2020-2024)
+              </li>
+              <li><span>CBSE | Class XII</span><br />JP Public Academy | 75% (2020)</li>
+              <li><span>CBSE | Class X</span><br />JP Public Academy | 80.3% (2018)</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="honors">
+            <ul>
+              <li><span>IBM Code Wars’23 Hackathon</span><br />Selected among India’s top 21 teams.</li>
+              <li><span>Antino Labs</span><br />Awarded Integrity and Ethics recognition.</li>
+              <li><span>Flutter Course</span><br />Gold Certificate in Job-Oriented Training.</li>
+              <li><span>IEEE Member</span><br />Coordinated technical event "Brain Waves".</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- ------------------------------------------------------services--------------------------------- -->
   <div id="services">
@@ -122,32 +113,31 @@
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
         <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>App development</h2>
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h2>App Development</h2>
           <p>
-            Dive into a world of innovative mobile applications crafted by my expertise in app development. I have a proven track record of bringing ideas to life through the creation of feature-rich and user-friendly apps. From concept to execution, my passion for coding and problem-solving shines through in every project. Let's turn your app ideas into reality together!
+            Specialized in Jetpack Compose and Flutter. I build feature-rich, high-performance mobile applications with
+            seamless user experiences.
           </p>
-          <!-- <a href="#">Learn more</a> -->
         </div>
-        
+
         <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web development</h2>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
           <p>
-            Over the years, I have immersed myself in the world of web development, My expertise spans a wide range of technologies and frameworks, allowing me to create robust and scalable solutions. From static websites to dynamic web applications, I've been dedicated to delivering high-quality results. Explore the diverse projects in my portfolio to witness the impact of my web development skills.
+            Crafting responsive and dynamic web applications using React.js and modern technologies to deliver scalable
+            solutions.
           </p>
-          <!-- <a href="#">Learn more</a> -->
         </div>
-        
+
         <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>App design</h2>
+          <i class="fa-solid fa-brain"></i>
+          <h2>AI & ML</h2>
           <p>
-            I take pride in crafting stunning user interface designs for mobile applications. With a keen eye for aesthetics and a focus on user experience, I have successfully created numerous UI designs that enhance the overall look and feel of mobile apps. Explore my portfolio to see how I have elevated the app experiences through beautiful and intuitive UI designs.
+            Experience in building and deploying predictive models using Python, Flask, and popular ML frameworks.
           </p>
-          <!-- <a href="#">Learn more</a> -->
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -156,43 +146,40 @@
     <div class="container">
       <h1 class="sub-title">My Work</h1>
       <div class="work-list">
-        <div class="work">
+        <div class="work" onclick="openProjectModal('competishun')">
           <img src="images/work-2.png" />
           <div class="layer">
-            <h3>Movie Description App</h3>
-            <p>
-              This app give information about latest tvshows, movies with their
-              descriptions and ratings and etc.
-            </p>
-            <a href="https://github.com/aryanmaheshwari1420/MovieDescription" target="_blank">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-            <a href="https://www.linkedin.com/posts/aryan-maheshwari-020bb0206_project-androiddevelopment-android-activity-7017627580908363776-65tm?utm_source=share&utm_medium=member_desktop" target="_blank"><i
-              class="fa-solid fa-external-link-square-alt"></i>Demo</a>
+            <h3>Competishun</h3>
+            <p>Architected learning platform with 12.4K+ active devices. Click for details.</p>
+            <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
           </div>
         </div>
-        <div class="work">
+        <div class="work" onclick="openProjectModal('lnt')">
           <img src="images/work-1.png" />
           <div class="layer">
-            <h3>Notes App</h3>
-            <p>
-              This App give you real time acces of your daily task to saved it .
-            </p>
-            <a href="https://github.com/aryanmaheshwari1420/NotesApp---flutter" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h3>L&T Metro Rail</h3>
+            <p>Embedded systems & fare calculation for Hyderabad Metro. Click for details.</p>
+            <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
           </div>
         </div>
-        <div class="work">
+        <div class="work" onclick="openProjectModal('nord')">
           <img src="images/work-3.png" />
           <div class="layer">
-            <h3>Text Utils Web application</h3>
-            <p>
-              This web application helps to peform necessary text manipulation functionalities.
-            </p>
-            <a href="https://github.com/aryanmaheshwari1420/React" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="https://aryanmaheshwari1420.github.io/React/" target="_blank"><i
-                class="fa-solid fa-external-link-square-alt"></i>Live</a>
+            <h3>Nord (NFC Tracker)</h3>
+            <p>Secure NFC-based attendance system reducing manual time by 70%. Click for details.</p>
+            <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
+          </div>
+        </div>
+        <div class="work" onclick="openProjectModal('diabetes')">
+          <img src="images/work-3.png" />
+          <div class="layer">
+            <h3>Diabetic Predictor</h3>
+            <p>ML Web App using KNN for diabetes prediction. Click for details.</p>
+            <div class="layer-links">
+              <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
+              <a href="https://aryanmahesh.pythonanywhere.com/" target="_blank"><i
+                  class="fa-solid fa-external-link-alt"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -213,7 +200,7 @@
             <a href="https://github.com/aryanmaheshwari1420"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-          <a href="images/AryanMaheshwari_21dec.pdf" download class="btn btn2">Download CV</a>
+          <a href="images/ARYAN_MAHESHWARI.pdf" download class="btn btn2">Download CV</a>
         </div>
         <div class="contact-right">
           <form name="submit-to-google-sheet">
@@ -233,6 +220,16 @@
       </p>
     </div>
   </div>
+  <!-- -------------------------------Project Modal ----------------------->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modalBody">
+        <!-- Content will be injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
   <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -244,24 +241,97 @@
       for (tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
       }
-      // to show the other contents on onclick event on experience and education
       event.currentTarget.classList.add("active-links");
       document.getElementById(tabname).classList.add("active-tab");
     }
-  </script>
-  <script>
-    var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu() {
-      sidemenu.style.right = "0";
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
+
+    // Project Modal Logic
+    const modal = document.getElementById("projectModal");
+    const modalBody = document.getElementById("modalBody");
+    const closeBtn = document.getElementsByClassName("close-modal")[0];
+
+    const projectData = {
+      lnt: {
+        title: "L&T Metro Rail (Hyderabad)",
+        subtitle: "Embedded Systems & Metro Ticketing Solutions",
+        tasks: [
+          "Developed mission-critical software for TR (Ticket Reader) and TOM (Ticket Office Machine) devices.",
+          "Implemented complex fare calculation logic and multi-mode ticketing (SJT, RJT, Family, Group, NCMC).",
+          "Architected new screens for NCMC transaction history and optimized mobile ticketing apps (PTD).",
+          "Converted legacy projects into modern MVVM-based architectures using Hilt, LiveData, and Observers.",
+          "Implemented root-level boot installers and APK transfer mechanisms via ADB.",
+          "Resolved critical hardware-software interface issues like QR scanner focus and boot script automation.",
+          "Optimized device login screens and refined ticket detail visualizations using reactive data observers."
+        ]
+      },
+      competishun: {
+        title: "Competishun (Ed-Tech Platform)",
+        subtitle: "Full-Scale Android Architecture & Launch",
+        tasks: [
+          "Architected and launched the mobile platform serving a user base of 12.4K+ active devices.",
+          "Integrated Razorpay gateway and FCM notifications, reducing manual support requests by 25%.",
+          "Engineered the LiveStreaming module and offline download system, driving a 40% increase in engagement.",
+          "Developed a Test Management module with advanced features like resume/reattempt support.",
+          "Implemented video-integrated quizzes and a personalized community module using Kotlin & MVVM.",
+          "Optimized app performance by refactoring legacy components, resulting in 30% faster load times."
+        ]
+      },
+      nord: {
+        title: "Nord (NFC Attendance Tracker)",
+        subtitle: "NFC-Based Institutional Security",
+        tasks: [
+          "Implemented a secure NFC-based attendance system with full transaction history and real-time updates.",
+          "Reduced manual attendance logging time by 70% through automation and real-time data synchronization.",
+          "Facilitated seamless drop-off/pickup tracking, significantly enhancing institutional safety protocols.",
+          "Developed a companion dashboard for real-time status monitoring and history retrieval."
+        ]
+      },
+      diabetes: {
+        title: "Diabetic Predictor (ML Web App)",
+        subtitle: "Real-Time Health Analytics",
+        tasks: [
+          "Developed a Flask-based web application utilizing K-Nearest Neighbor (KNN) for accurate diabetes prediction.",
+          "Achieved high reliability through rigorous data preprocessing and model fine-tuning.",
+          "Deployed the application on PythonAnywhere to support instant predictions with a highly responsive UI.",
+          "Implemented a clean, user-friendly interface for diagnostic input and result visualization."
+        ]
+      }
+    };
+
+    function openProjectModal(projectId) {
+      const data = projectData[projectId];
+      if (!data) return;
+
+      modalBody.innerHTML = `
+        <h2 class="modal-title">${data.title}</h2>
+        <p class="modal-subtitle">${data.subtitle}</p>
+        <div class="modal-tasks">
+          <ul>
+            ${data.tasks.map(task => `<li><i class="fas fa-check-circle"></i> ${task}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
     }
-    function closemenu() {
-      sidemenu.style.right = "-200px";
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
     }
-  </script>
-  <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwIixHMHl2WsS4_c4ExAn4FiSDFxxo_Nby4hrWuzvg8Ty3HSF2hvVFNraY7k434wJuIdw/exec";
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    }
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwIixHMHl2WsS4_c4ExAn4FiSDFxxo_Nby4hrWuzvg8Ty3HSF2hvVFNraY7k434wJuIdw/exec";
     const form = document.forms["submit-to-google-sheet"];
     const msg = document.getElementById("msg");
 
@@ -270,9 +340,7 @@
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
           msg.innerHTML = "Message Sent Succesfully";
-          setTimeout(function () {
-            msg.innerHTML = "";
-          }, 5000);
+          setTimeout(function () { msg.innerHTML = ""; }, 5000);
           form.reset();
         })
         .catch((error) => console.error("Error!", error.message));
