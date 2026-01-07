@@ -1,66 +1,75 @@
+:root {
+  --primary-color: #ff004f;
+  --bg-color: #080808;
+  --card-bg: rgba(38, 38, 38, 0.7);
+  --text-color: #fff;
+  --text-dim: #ababab;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", "sans-serif";
+  font-family: 'Outfit', sans-serif;
   box-sizing: border-box;
 }
 
-html{
- scroll-behavior: smooth;
-}
-body {
-  /* text color */
-  color: white;
-  /* background color */
-  background-color: #080808;
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
 
 #header {
   width: 100%;
-  height: 115vh;
-  /* background-image: url(images/background.png); */
+  height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
+
 .container {
   padding: 10px 10%;
 }
 
 nav {
-  /* for image and link will be side by side */
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .logo {
   width: 140px;
+  filter: drop-shadow(0 0 10px rgba(255, 0, 79, 0.3));
 }
 
 nav ul li {
-  /* for horizontally aline */
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
-  font-size: larger;
+  font-size: 18px;
 }
 
 nav ul li a {
-  color: white;
-  /* for removing underline */
+  color: var(--text-color);
   text-decoration: none;
   position: relative;
+  transition: 0.3s;
 }
 
 nav ul li a::after {
   content: "";
-  /* when we take cursor over there we want to hide that line that's why we do this width = 0 */
-  /* width: 100%; */
   width: 0;
   height: 2px;
-  background: #ff004f;
+  background: var(--primary-color);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -68,49 +77,48 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-  /* we  hover on the button it will be shown the red initailly it is zero*/
   width: 100%;
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 30px;
 }
 
 .header-text h1 {
-  font-size: 50px;
+  font-size: 60px;
   margin-top: 20px;
+  font-weight: 700;
 }
 
 .header-text h1 span {
-  color: #ff004f;
+  color: var(--primary-color);
+  text-shadow: 0 0 20px rgba(255, 0, 79, 0.5);
 }
 
 /* ---------------------------about----------------------- */
 #about {
-  padding: 88px 0;
-  color: #ababab;
+  padding: 100px 0;
+  color: var(--text-dim);
 }
 
 .row {
-  /* so that we get content side by side */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .about-col-1 {
-  /* it means the width will be 35% */
   flex-basis: 35%;
 }
 
 .about-col-1 img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .about-col-2 {
-  /* it means the width will be 35% */
   flex-basis: 60%;
 }
 
@@ -118,11 +126,12 @@ nav ul li a:hover::after {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 30px;
 }
 
 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 40px 0 20px;
 }
 
 .tab-links {
@@ -131,6 +140,7 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  color: var(--text-dim);
 }
 
 .tab-links::after {
@@ -140,141 +150,172 @@ nav ul li a:hover::after {
   position: absolute;
   left: 0;
   bottom: -8px;
-  background: #ff004f;
+  background: var(--primary-color);
   transition: 0.5s;
 }
 
+.tab-links.active-links {
+  color: #fff;
+}
+
 .tab-links.active-links::after {
-  width: 50%;
+  width: 100%;
 }
 
 .tab-contents ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .tab-contents ul li span {
-  color: #fff;
-  font-size: 14px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .tab-contents {
-  /* it will hide the all contents */
   display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tab-contents.active-tab {
-  /* so it can be visible */
   display: block;
 }
 
-/* ---------------------------------------------------------------services--------------------------------------------------------------- */
+/* ---------------------------services--------------------------- */
 #services {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin-top: 50px;
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
 
 .services-list div {
-  background: #262626;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
   padding: 40px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
+  border-radius: 15px;
+  border: 1px solid var(--glass-border);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .services-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 45px;
+  margin-bottom: 25px;
+  color: var(--primary-color);
 }
 
 .services-list div h2 {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 15px;
-  font-weight: 500;
-}
-
-.services-list div a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
+  font-weight: 600;
 }
 
 .services-list div:hover {
-  background: #ff004f;
-  /* it will move the box by 2  pixel */
-  transition: translateY(-10px);
+  background: var(--primary-color);
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(255, 0, 79, 0.4);
+}
+
+.services-list div:hover i,
+.services-list div:hover h2 {
+  color: #fff;
 }
 
 /* ---------------portfolio--------------------- */
-
 #portfolio {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 50px;
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
+
 .work {
-  border-radius: 10px;
+  border-radius: 15px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .work img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   display: block;
-  transition: 0.5s;
+  transition: 0.6s;
 }
+
 .layer {
   width: 100%;
-  /* height we make it zero to visible only on onclicked event types such thing becuase it matters */
-  height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
-  border-radius: 10px;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), var(--primary-color));
+  border-radius: 15px;
   position: absolute;
   left: 0;
   bottom: 0;
-  position: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 30px;
   text-align: center;
   font-size: 14px;
-  transition: height 0.5s;
+  transition: height 0.5s ease-in-out;
 }
+
 .layer h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
+
+.layer-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
 .layer a {
-  margin-top: 20px;
-  color: #ff004f;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 50px;
   background: #fff;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   text-align: center;
+  transition: 0.3s;
+}
+
+.layer a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .work:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .work:hover .layer {
@@ -283,59 +324,70 @@ nav ul li a:hover::after {
 
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 60px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
-  padding: 14px 50px;
-  border-radius: 6px;
+  border: 1.5px solid var(--primary-color);
+  padding: 14px 45px;
+  border-radius: 30px;
   text-decoration: none;
   color: white;
-  transition: background 0.5s;
+  font-weight: 500;
+  transition: all 0.4s;
 }
 
 .btn:hover {
-  background: #ff004f;
+  background: var(--primary-color);
+  box-shadow: 0 10px 25px rgba(255, 0, 79, 0.4);
+  transform: translateY(-3px);
 }
 
 /* ------------------contact section */
+#contact {
+  padding: 80px 0;
+}
 
 .contact-left {
   flex-basis: 35%;
 }
+
 .contact-right {
   flex-basis: 60%;
 }
 
 .contact-left p {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-left p i {
-  color: #ff004f;
+  color: var(--primary-color);
   margin-right: 15px;
-  font-size: 25px;
+  font-size: 22px;
 }
+
 .social-icons {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .social-icons a {
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #ababab;
+  font-size: 28px;
+  margin-right: 20px;
+  color: var(--text-dim);
   display: inline-block;
-  transition: transform 0.5s;
+  transition: all 0.4s;
 }
 
 .social-icons a:hover {
-  color: #ff004f;
-  transform: translate(-5px);
+  color: var(--primary-color);
+  transform: translateY(-8px);
 }
 
 .btn.btn2 {
   display: inline-block;
-  background: #ff004f;
+  background: var(--primary-color);
+  border: none;
 }
 
 .contact-right form {
@@ -345,14 +397,20 @@ nav ul li a:hover::after {
 form input,
 form textarea {
   width: 100%;
-  border: 0;
+  border: 1px solid var(--glass-border);
   outline: none;
-  background: #262626;
-  padding: 15px;
+  background: var(--card-bg);
+  padding: 16px;
   margin: 15px 0;
   color: #fff;
-  font-size: 18px;
-  border-radius: 6px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary-color);
 }
 
 form .btn2 {
@@ -365,68 +423,167 @@ form .btn2 {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 15px 0;
-  background: #262626;
-  font-weight: 300;
-  margin-top: 20px;
+  padding: 25px 0;
+  background: #1a1a1a;
+  font-weight: 400;
+  margin-top: 50px;
+  color: var(--text-dim);
 }
 
 .copyright i {
-  color: #ff004f;
+  color: var(--primary-color);
 }
 
-/* ------------------------------------------------------------------css for small screen---------------------------------------------------- */
-
-/* ------thing which i don't want to see on laptop page but want on mobile */
-nav .fas {
+/* -------------------------Project Modal------------------------- */
+.modal {
   display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
 }
-/* ---------this is all about media query to show on the mobile screen with proper image and format */
+
+.modal-content {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  padding: 40px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  animation: modalPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+@keyframes modalPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: var(--text-dim);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  color: var(--primary-color);
+}
+
+.modal-title {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.modal-subtitle {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.modal-tasks ul {
+  list-style: none;
+}
+
+.modal-tasks ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-tasks ul li i {
+  color: var(--primary-color);
+  margin-right: 12px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* -------------------------media query------------------------- */
 @media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .modal-title {
+    font-size: 26px;
+  }
+
   #header {
-    background-image: url(images/phone-background.png);
+    height: 80vh;
   }
 
   .header-text {
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 40%;
+    font-size: 24px;
   }
 
   .header-text h1 {
-    font-size: 45px;
-    margin-top: 60px;
+    font-size: 40px;
+    margin-top: 30px;
   }
+
   nav .fas {
     display: block;
     font-size: 25px;
+    cursor: pointer;
   }
 
   nav ul {
-    background: #ff004f;
+    background: var(--primary-color);
     position: fixed;
     top: 0;
-    /* to hide when we clicked on button */
     right: -200px;
     width: 200px;
     height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
+    padding-top: 60px;
+    z-index: 10;
     transition: right 0.5s;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
   }
 
   nav ul li {
     display: block;
-    margin: 25px;
+    margin: 30px;
   }
+
   nav ul .fas {
     position: absolute;
     top: 25px;
     left: 25px;
-    cursor: pointer;
   }
 
   .sub-title {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .about-col-1,
@@ -435,16 +592,12 @@ nav .fas {
   }
 
   .about-col-1 {
-    margin-bottom: 30px;
-  }
-
-  .about-col-2 {
-    font-size: 14px;
+    margin-bottom: 40px;
   }
 
   .tab-links {
     font-size: 16px;
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .contact-left,
@@ -452,13 +605,15 @@ nav .fas {
     flex-basis: 100%;
   }
 
-  .copyright {
-    font-size: 14px;
+  .services-list,
+  .work-list {
+    grid-template-columns: 1fr;
   }
 }
 
-#msg{
-    color: #61b752;
-    margin-top: 10px;
-    display: block;
+#msg {
+  color: #61b752;
+  margin-top: 15px;
+  display: block;
+  font-weight: 500;
 }
