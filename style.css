@@ -46,6 +46,10 @@ nav {
   padding: 20px 0;
 }
 
+nav .fas {
+  display: none;
+}
+
 .logo {
   width: 140px;
   filter: drop-shadow(0 0 10px rgba(255, 0, 79, 0.3));
