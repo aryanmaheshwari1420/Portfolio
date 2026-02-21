@@ -5,369 +5,353 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryan Portfolio</title>
+  <title>Aryan Maheshwari | Android Kotlin Developer & ML Integration Specialist</title>
+
+  <!-- SEO & Credibility -->
+  <meta name="description"
+    content="Associate Software Developer at Antino Labs. Specialist in Android Kotlin, Mobile Systems, and ML Integration. Driving 1Lakh+ installs and high-impact technical solutions.">
+  <meta name="keywords"
+    content="Aryan Maheshwari, Android Developer, Kotlin, Antino Labs, Jetpack Compose, Flutter, ML Integration, LeetCode 400">
+  <meta property="og:title" content="Aryan Maheshwari | Portfolio">
+  <meta property="og:description"
+    content="Engineering high-performance Android ecosystems with 1,00,000+ app installs.">
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/b32d403477.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-container">
+    <div id="scroll-progress"></div>
+  </div>
+
+  <nav class="glass-effect container">
+    <div class="logo-wrapper">
+      <img src="images/IMG_0699.PNG" class="logo" alt="Aryan Logo" />
+      <span class="status-badge"><span class="pulse"></span> Open to Opportunities</span>
+    </div>
+    <ul id="sidemenu">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fas fa-times" onclick="closemenu()"></i>
+    </ul>
+    <i class="fas fa-bars" onclick="openmenu()"></i>
+  </nav>
+
   <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/IMG_0699.PNG" class="logo" />
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-label">Associate Software Developer @ Antino Labs</p>
+          <h1>
+            Engineering <span class="typing-target"><span class="typing-text"></span><span
+                class="cursor">|</span></span><br />
+            High-Impact Systems
+          </h1>
+          <p class="hero-description">Results-driven <strong>Android Kotlin developer</strong> with 1,00,000+ app
+            installs. Specialist in MVVM, Mobile Systems, and <strong>ML Integration</strong>.</p>
+
+          <div class="hero-btns">
+            <a href="#portfolio" class="btn primary-btn">Explore Work</a>
+            <a href="images/ARYAN_MAHESHWARI.pdf" download class="btn secondary-btn"><i class="fas fa-download"></i>
+              Download Resume</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/aryanmaheshwari1420" target="_blank" title="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/" target="_blank" title="LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/ARYAN_MAHESHWARI/" target="_blank" title="LeetCode"><i
+                class="fas fa-code"></i></a>
+            <a href="mailto:aryanmaheshwari1420@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------About Section ----------------->
+  <section id="about" class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/short.png" alt="Aryan Maheshwari" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p class="about-description">
+          I am a <strong>results-driven Android and Flutter developer</strong> at Antino Labs with hands-on experience
+          in building scalable mobile applications, system-level integrations, and performance optimization. With a
+          track record of driving <strong>1,00,000+ installs</strong>, I specialize in architecting high-impact
+          engineering solutions.
+        </p>
+        <p class="about-description">
+          My approach is rooted in <strong>Solid Principles</strong> and <strong>Clean Architecture</strong>. I focus on
+          creating measurable business impact, such as improving user engagement by 40% and reducing support requests by
+          25% through optimized system design.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('honors')">Honors & Skills</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="education">
+          <ul>
+            <li><span>GLA University, Mathura (2020-2024)</span><br />B.Tech - Computer Science (AIML) | GPA: 7.89</li>
+            <li><span>B.Tech CSE Essentials</span><br />OOPS, DSA, REST APIs, GraphQL, System Design</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="honors">
+          <ul>
+            <li><span>IBM Code Wars 2023</span><br />India's Top 21 Teams</li>
+            <li><span>Antino Labs</span><br />Integrity and Ethics Recognition</li>
+            <li><span>Certifications</span><br />IEEE Member | Gold Certificate in Flutter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------Technical Expertise Section ----------------->
+  <section id="expertise" class="container">
+    <h1 class="sub-title">Technical Expertise</h1>
+    <div class="expertise-grid">
+      <div class="expertise-card glass-effect">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Native Android</h3>
+        <p>Expertise in building scalable, high-performance Android applications.</p>
+        <div class="skill-list">
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Android SDK</span>
+          <span class="skill-tag">Jetpack Compose</span>
+          <span class="skill-tag">XML UI</span>
+          <span class="skill-tag">Coroutines</span>
+          <span class="skill-tag">LiveData</span>
+          <span class="skill-tag">ViewModel</span>
+        </div>
+      </div>
+
+      <div class="expertise-card glass-effect">
+        <i class="fas fa-layer-group"></i>
+        <h3>Cross-Platform</h3>
+        <p>Crafting beautiful, multi-platform experiences with Flutter.</p>
+        <div class="skill-list">
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">GraphǪL</span>
+          <span class="skill-tag">Postman</span>
+        </div>
+      </div>
+
+      <div class="expertise-card glass-effect">
+        <i class="fas fa-microchip"></i>
+        <h3>Architecture & System</h3>
+        <p>Decoupled design and hardware-level integrations.</p>
+        <div class="skill-list">
+          <span class="skill-tag">MVVM</span>
+          <span class="skill-tag">Clean Architecture</span>
+          <span class="skill-tag">Hilt / Dagger</span>
+          <span class="skill-tag">Retrofit</span>
+          <span class="skill-tag">RoomDB</span>
+          <span class="skill-tag">NFC Integration</span>
+        </div>
+      </div>
+
+      <div class="expertise-card glass-effect">
+        <i class="fas fa-tools"></i>
+        <h3>Tools & DevOps</h3>
+        <p>Managing lifecycle and deployment for production apps.</p>
+        <div class="skill-list">
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Play Store Publishing</span>
+          <span class="skill-tag">ADB Automation</span>
+          <span class="skill-tag">Material Design</span>
+          <span class="skill-tag">DSA (400+ Solved)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------Experience Timeline ----------------->
+  <section id="experience" class="container">
+    <h1 class="sub-title">Experience</h1>
+    <div class="row" style="flex-direction: column; gap: 30px;">
+      <div class="glass-effect" style="padding: 30px; width: 100%;">
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:15px;">
+          <h3 style="color:var(--primary); font-size:1.5rem;">Associate Software Developer</h3>
+          <span style="color:var(--text-dim); font-weight:600;">Feb 2024 - Jan 2026</span>
+        </div>
+        <p style="font-weight:700; font-size:1.2rem; margin-bottom:10px;">Antino Labs Private Limited</p>
+        <ul style="color:var(--text-dim); padding-left:20px;">
+          <li style="margin-bottom:10px;">Engineered Android features for <strong>Competishun</strong> (1Lakh+
+            installs), leading delivery for payments, and live streaming.</li>
+          <li style="margin-bottom:10px;">Developed metro ticketing applications for <strong>L&T Metro Rail</strong>
+            with root-level integrations.</li>
+          <li style="margin-bottom:10px;">Integrated NFC-based attendance systems, reducing manual effort by 50%.</li>
         </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Android Developer and AIML Enthusiast</p>
-        <h1>
-          Hi , I am <span>Aryan Maheshwari</span> <br />
-          from India
-        </h1>
       </div>
-    </div>
-  </div>
-  <!-- -------------------------------------about section --------------------------------->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/short.png" />
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>
-            I am an <strong>Associate Software Developer</strong> at Antino Labs with a strong foundation in Android
-            (Jetpack Compose, Flutter) and Machine Learning. With over 1 Lakh+ installs on production-level apps like
-            Competishun, I specialize in building scalable, high-performance features. From architecting educational
-            platforms to integrating NFC-based attendance systems, I am passionate about solving real-world problems
-            through innovative technology.
-          </p>
-          <div class="tab-titles">
-            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-            <p class="tab-links" onclick="opentab('honors')">Honors</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Android Development</span><br />Jetpack Compose, MVVM, XML UI, Flutter, Kotlin, Java, Dart,
-                Retrofit, Hilt, RoomDB, Coroutines</li>
-              <li><span>Web Development</span><br />React.js, Flask, HTML5, CSS3, JavaScript (ES6+)</li>
-              <li><span>Machine Learning</span><br />Python, Deep Learning, Data Preprocessing, Model Evaluation
-                (K-Nearest Neighbor, Random Forest)</li>
-              <li><span>Tools & Concepts</span><br />Git, GitHub, Postman, Firebase, Android SDK, REST APIs, GraphQL,
-                Clean Architecture, DSA</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li>
-                <span>Antino Labs | Associate Software Developer</span><br />Feb 2024 - Present<br>
-                - Engineered features for educational app Competishun (17.5K+ installs).<br>
-                - Led module delivery for notifications, payments, and LiveStream.<br>
-                - Integrated NFC for digitized attendance, reducing manual effort by 50%.
-              </li>
-              <li>
-                <span>Orbitor | Machine Learning Intern</span><br />July 2023 - Aug 2023<br>
-                - Fine-tuned ML models achieving 87% accuracy on Iris & Wine datasets.<br>
-                - Deployed live Flask-based websites for real-time prediction.
-              </li>
-              <li>
-                <span>Bright Infonet | Frontend Developer Intern</span><br />Aug 2022 - Sep 2022<br>
-                - Designed responsive UI in Flutter for "The School Diary".<br>
-                - Created Image-to-PDF module and file downloader.
-              </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>GLA University, Mathura</span><br />B.Tech - Computer Science (AIML) | GPA: 7.83 (2020-2024)
-              </li>
-              <li><span>CBSE | Class XII</span><br />JP Public Academy | 75% (2020)</li>
-              <li><span>CBSE | Class X</span><br />JP Public Academy | 80.3% (2018)</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="honors">
-            <ul>
-              <li><span>IBM Code Wars’23 Hackathon</span><br />Selected among India’s top 21 teams.</li>
-              <li><span>Antino Labs</span><br />Awarded Integrity and Ethics recognition.</li>
-              <li><span>Flutter Course</span><br />Gold Certificate in Job-Oriented Training.</li>
-              <li><span>IEEE Member</span><br />Coordinated technical event "Brain Waves".</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- ------------------------------------------------------services--------------------------------- -->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <h2>App Development</h2>
-          <p>
-            Specialized in Jetpack Compose and Flutter. I build feature-rich, high-performance mobile applications with
-            seamless user experiences.
-          </p>
-        </div>
 
-        <div>
-          <i class="fa-solid fa-laptop-code"></i>
-          <h2>Web Development</h2>
-          <p>
-            Crafting responsive and dynamic web applications using React.js and modern technologies to deliver scalable
-            solutions.
-          </p>
+      <div class="glass-effect" style="padding: 30px; width: 100%;">
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:15px;">
+          <h3 style="color:var(--primary); font-size:1.5rem;">Frontend Developer Intern</h3>
+          <span style="color:var(--text-dim); font-weight:600;">Aug 2022 - Sep 2022</span>
         </div>
+        <p style="font-weight:700; font-size:1.2rem; margin-bottom:10px;">Bright Infonet (The School Diary)</p>
+        <ul style="color:var(--text-dim); padding-left:20px;">
+          <li style="margin-bottom:10px;">Built Image-to-PDF converter functionality used by 200+ students weekly.</li>
+          <li style="margin-bottom:10px;">Developed universal file download manager supporting multiple media formats
+            with live progress tracking.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <div>
-          <i class="fa-solid fa-brain"></i>
-          <h2>AI & ML</h2>
-          <p>
-            Experience in building and deploying predictive models using Python, Flask, and popular ML frameworks.
-          </p>
+  <!-- -----------------Projects Portfolio Section ----------------->
+  <section id="portfolio" class="container">
+    <h1 class="sub-title">Impact Portfolio</h1>
+    <div class="work-list">
+      <div class="work" onclick="openProjectModal('competishun')">
+        <img src="images/work-2.png" alt="Competishun Project" />
+        <div class="layer">
+          <h3>Competishun</h3>
+          <p>1,00,000+ Installs | High-impact Ed-Tech module Lead.</p>
+          <div class="project-tags">
+            <span class="project-tag">Kotlin</span>
+            <span class="project-tag">Razorpay</span>
+            <span class="project-tag">LiveStream</span>
+          </div>
         </div>
+      </div>
+      <div class="work" onclick="openProjectModal('lnt')">
+        <img src="images/work-1.png" alt="L&T Metro Rail Project" />
+        <div class="layer">
+          <h3>L&T Metro Rail</h3>
+          <p>Embedded Ticketing Kiosks (TOM, TVM, TR) for Smart Transit.</p>
+          <div class="project-tags">
+            <span class="project-tag">Root Automation</span>
+            <span class="project-tag">ADB</span>
+            <span class="project-tag">NCMC</span>
+          </div>
+        </div>
+      </div>
+      <div class="work" onclick="openProjectModal('nord')">
+        <img src="images/work-3.png" alt="Nord NFC Project" />
+        <div class="layer">
+          <h3>Nord NFC</h3>
+          <p>Attendance & Safety tracking with real-time safety automation.</p>
+          <div class="project-tags">
+            <span class="project-tag">NFC</span>
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Safety</span>
+          </div>
+        </div>
+      </div>
+      <div class="work" onclick="openProjectModal('diabetes')">
+        <img src="images/work-3.png" alt="Diabetic Predictor Project" />
+        <div class="layer">
+          <h3>ML Predictor</h3>
+          <p>Medical analytics platform powered by KNN & Flask.</p>
+          <div class="project-tags">
+            <span class="project-tag">ML</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/aryanmaheshwari1420" target="_blank" class="btn secondary-btn"
+      style="margin: 40px auto; width:fit-content;">See More on GitHub</a>
+  </section>
 
+  <!-- -----------------App Architecture Philosophy Section ----------------->
+  <section id="philosophy" class="container"
+    style="background: rgba(255, 0, 79, 0.03); border-radius: 30px; margin-top: 50px;">
+    <h1 class="sub-title">Architecture Philosophy</h1>
+    <div class="row">
+      <div class="about-col-2">
+        <p class="about-description">
+          I believe that <strong>code integrity</strong> is the bedrock of world-class software. My approach to mobile
+          development is rooted in:
+        </p>
+        <ul style="color:var(--text-dim); margin-bottom: 20px;">
+          <li style="margin-bottom:15px;"><i class="fas fa-microchip"
+              style="color:var(--primary); margin-right:15px;"></i> <strong>Solid Principles:</strong> Ensuring
+            decoupled and testable logic.</li>
+          <li style="margin-bottom:15px;"><i class="fas fa-shield-alt"
+              style="color:var(--primary); margin-right:15px;"></i> <strong>Clean Architecture:</strong> Separation of
+            domain, data, and UI layers for long-term scalability.</li>
+          <li style="margin-bottom:15px;"><i class="fas fa-tachometer-alt"
+              style="color:var(--primary); margin-right:15px;"></i> <strong>Performance First:</strong> Optimizing
+            coroutines and state management to achieve 60 FPS UI.</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <!-- -----------------------------portfilio------------------- -->
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work" onclick="openProjectModal('competishun')">
-          <img src="images/work-2.png" />
-          <div class="layer">
-            <h3>Competishun</h3>
-            <p>Architected learning platform with 12.4K+ active devices. Click for details.</p>
-            <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
-          </div>
+  </section>
+
+  <!-- -----------------Contact Section ----------------->
+  <section id="contact" class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Connect With Me</h1>
+        <p><i class="fas fa-paper-plane"></i> aryanmaheshwari1420@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> +91 8439787881</p>
+        <div class="hero-socials" style="margin-top:40px;">
+          <a href="https://github.com/aryanmaheshwari1420" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://leetcode.com/u/ARYAN_MAHESHWARI/" target="_blank"><i class="fas fa-code"></i></a>
         </div>
-        <div class="work" onclick="openProjectModal('lnt')">
-          <img src="images/work-1.png" />
-          <div class="layer">
-            <h3>L&T Metro Rail</h3>
-            <p>Embedded systems & fare calculation for Hyderabad Metro. Click for details.</p>
-            <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
-          </div>
-        </div>
-        <div class="work" onclick="openProjectModal('nord')">
-          <img src="images/work-3.png" />
-          <div class="layer">
-            <h3>Nord (NFC Tracker)</h3>
-            <p>Secure NFC-based attendance system reducing manual time by 70%. Click for details.</p>
-            <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
-          </div>
-        </div>
-        <div class="work" onclick="openProjectModal('diabetes')">
-          <img src="images/work-3.png" />
-          <div class="layer">
-            <h3>Diabetic Predictor</h3>
-            <p>ML Web App using KNN for diabetes prediction. Click for details.</p>
-            <div class="layer-links">
-              <a href="javascript:void(0)"><i class="fa-solid fa-circle-info"></i></a>
-              <a href="https://aryanmahesh.pythonanywhere.com/" target="_blank"><i
-                  class="fa-solid fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
+        <a href="images/ARYAN_MAHESHWARI.pdf" download class="btn primary-btn" style="margin-top:30px;">Download CV</a>
       </div>
-      <a href="#" class="btn">See More</a>
-    </div>
-  </div>
-  <!-- -------------------------------contact form -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact me</h1>
-          <p><i class="fas fa-paper-plane"></i>aryanmaheshwari1420@gmail.com</p>
-          <p><i class="fas fa-phone-square-alt"></i>+91 8439787881</p>
-          <div class="social-icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-            <a href="https://github.com/aryanmaheshwari1420"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/aryan-maheshwari-020bb0206/"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          <a href="images/ARYAN_MAHESHWARI.pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form action="https://formspree.io/f/xnjnepyv" method="POST" id="contact-form">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input type="email" name="Email" placeholder="Your Email" required />
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
+      <div class="contact-right">
+        <form action="https://formspree.io/f/xnjnepyv" method="POST" id="contact-form" class="glass-effect"
+          style="padding:40px;">
+          <input type="text" name="Name" placeholder="Your Name" required
+            style="background:rgba(255,255,255,0.05); border:1px solid var(--glass-border); padding:15px; border-radius:10px; color:white; width:100%; margin-bottom:20px;" />
+          <input type="email" name="Email" placeholder="Your Email" required
+            style="background:rgba(255,255,255,0.05); border:1px solid var(--glass-border); padding:15px; border-radius:10px; color:white; width:100%; margin-bottom:20px;" />
+          <textarea name="Message" rows="6" placeholder="Your Message"
+            style="background:rgba(255,255,255,0.05); border:1px solid var(--glass-border); padding:15px; border-radius:10px; color:white; width:100%; margin-bottom:20px;"></textarea>
+          <button type="submit" class="btn primary-btn" style="width:100%;">Send Message</button>
+        </form>
+        <span id="msg" style="display:block; margin-top:15px; color:#00ff7f;"></span>
       </div>
     </div>
-    <div class="copyright">
-      <p>
-        Made with <i class="fas fa-heart"></i> by
-        ARYAN_MAHESHWARI
-      </p>
-    </div>
-  </div>
-  <!-- -------------------------------Project Modal ----------------------->
+  </section>
+
+  <footer class="container" style="text-align:center; padding: 50px 0; border-top: 1px solid var(--glass-border);">
+    <p style="color:var(--text-dim);">Made with <i class="fas fa-heart" style="color:var(--primary);"></i> by
+      <strong>Aryan Maheshwari</strong> &copy; 2026
+    </p>
+  </footer>
+
+  <!-- Project Modal -->
   <div id="projectModal" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
-      <div id="modalBody">
-        <!-- Content will be injected by JavaScript -->
-      </div>
+      <div id="modalBody"></div>
     </div>
   </div>
 
+  <script src="script.js"></script>
   <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-links");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-links");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu() { sidemenu.style.right = "0"; }
-    function closemenu() { sidemenu.style.right = "-200px"; }
-
-    // Project Modal Logic
-    const modal = document.getElementById("projectModal");
-    const modalBody = document.getElementById("modalBody");
-    const closeBtn = document.getElementsByClassName("close-modal")[0];
-
-    const projectData = {
-      lnt: {
-        title: "L&T Metro Rail (Hyderabad)",
-        subtitle: "Embedded Systems & Metro Ticketing Solutions",
-        tasks: [
-          "Developed mission-critical software for TR (Ticket Reader) and TOM (Ticket Office Machine) devices.",
-          "Implemented complex fare calculation logic and multi-mode ticketing (SJT, RJT, Family, Group, NCMC).",
-          "Architected new screens for NCMC transaction history and optimized mobile ticketing apps (PTD).",
-          "Converted legacy projects into modern MVVM-based architectures using Hilt, LiveData, and Observers.",
-          "Implemented root-level boot installers and APK transfer mechanisms via ADB.",
-          "Resolved critical hardware-software interface issues like QR scanner focus and boot script automation.",
-          "Optimized device login screens and refined ticket detail visualizations using reactive data observers."
-        ]
-      },
-      competishun: {
-        title: "Competishun (Ed-Tech Platform)",
-        subtitle: "Full-Scale Android Architecture & Launch",
-        tasks: [
-          "Architected and launched the mobile platform serving a user base of 12.4K+ active devices.",
-          "Integrated Razorpay gateway and FCM notifications, reducing manual support requests by 25%.",
-          "Engineered the LiveStreaming module and offline download system, driving a 40% increase in engagement.",
-          "Developed a Test Management module with advanced features like resume/reattempt support.",
-          "Implemented video-integrated quizzes and a personalized community module using Kotlin & MVVM.",
-          "Optimized app performance by refactoring legacy components, resulting in 30% faster load times."
-        ]
-      },
-      nord: {
-        title: "Nord (NFC Attendance Tracker)",
-        subtitle: "NFC-Based Institutional Security",
-        tasks: [
-          "Implemented a secure NFC-based attendance system with full transaction history and real-time updates.",
-          "Reduced manual attendance logging time by 70% through automation and real-time data synchronization.",
-          "Facilitated seamless drop-off/pickup tracking, significantly enhancing institutional safety protocols.",
-          "Developed a companion dashboard for real-time status monitoring and history retrieval."
-        ]
-      },
-      diabetes: {
-        title: "Diabetic Predictor (ML Web App)",
-        subtitle: "Real-Time Health Analytics",
-        tasks: [
-          "Developed a Flask-based web application utilizing K-Nearest Neighbor (KNN) for accurate diabetes prediction.",
-          "Achieved high reliability through rigorous data preprocessing and model fine-tuning.",
-          "Deployed the application on PythonAnywhere to support instant predictions with a highly responsive UI.",
-          "Implemented a clean, user-friendly interface for diagnostic input and result visualization."
-        ]
-      }
-    };
-
-    function openProjectModal(projectId) {
-      const data = projectData[projectId];
-      if (!data) return;
-
-      modalBody.innerHTML = `
-        <h2 class="modal-title">${data.title}</h2>
-        <p class="modal-subtitle">${data.subtitle}</p>
-        <div class="modal-tasks">
-          <ul>
-            ${data.tasks.map(task => `<li><i class="fas fa-check-circle"></i> ${task}</li>`).join('')}
-          </ul>
-        </div>
-      `;
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
-    }
-
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
-      }
-    }
-
-    const form = document.getElementById("contact-form");
-    const msg = document.getElementById("msg");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-        .then(response => {
-          if (response.ok) {
-            msg.innerHTML = "Message Sent Successfully";
-            form.reset();
-            setTimeout(function () { msg.innerHTML = ""; }, 5000);
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                msg.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-              } else {
-                msg.innerHTML = "Oops! There was a problem submitting your form";
-              }
-            })
-          }
-        })
-        .catch(error => {
-          msg.innerHTML = "Oops! There was a problem submitting your form";
-        });
-    });
+    function openmenu() { document.getElementById("sidemenu").style.right = "0"; }
+    function closemenu() { document.getElementById("sidemenu").style.right = "-200px"; }
   </script>
 </body>
-
 
 </html>
