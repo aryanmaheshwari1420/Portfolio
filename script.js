@@ -147,6 +147,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Implemented clean diagnostic input forms and result visualization.",
                 "Optimized model inference time for real-time health feedback."
             ]
+        },
+        taskmanager: {
+            title: "TaskManager",
+            subtitle: "Android Task-Tracking App | Play Store",
+            impact: "Monetized with Rewarded & Interstitial Ads",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.aryanmaheshwari.taskmanager",
+            metrics: [
+                { value: "Kotlin", label: "Language" },
+                { value: "MVVM", label: "Architecture" },
+                { value: "AdMob", label: "Monetization" }
+            ],
+            description: "Built a comprehensive task-tracking application featuring premium functionality unlocked via rewarded ads, with interstitial ads displaying after every 4 tasks.",
+            tasks: [
+                "Implemented full CRUD task flow with live search and filtering capabilities.",
+                "Integrated Google AdMob with rewarded ad premium unlock and interstitial ad placements.",
+                "Developed Room database for robust offline persistence and data management.",
+                "Designed polished UI with glass-morphic cards, custom drawables, and animated onboarding.",
+                "Applied Clean Architecture separating UI, business logic, and data layers for scalability."
+            ]
         }
     };
 
